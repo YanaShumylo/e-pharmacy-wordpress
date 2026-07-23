@@ -1,0 +1,385 @@
+.medicine-products-filter {
+width:100%;
+padding-top:20px;
+margin-bottom:40px;
+}
+
+.medicine-products-filter form {
+display:flex;
+align-items:center;
+gap:16px;
+flex-wrap:wrap;
+}
+
+/* категорії */
+.medicine-products-filter select {
+width:224px;
+height:44px;
+padding:0 42px 0 18px;
+border-radius:60px;
+border:1px solid rgba(29,30,33,0.1);
+background:var(--base-3);
+font-size:12px;
+line-height:1.5;
+color:var(--text-green);
+appearance:none;
+transition: border-color .3s ease, color .3s ease, outline .3s ease;
+}
+
+.medicine-products-filter select:hover,
+.medicine-products-filter select:focus {
+border-color:var(--base-4);
+color:var(--contrast);
+outline:none;
+}
+
+.medicine-select-wrap,
+.medicine-search-wrap{
+position:relative;
+display:inline-flex;
+}
+
+.medicine-select-wrap select{
+padding-right:46px;
+}
+
+.medicine-search-wrap input{
+padding-left:46px;
+}
+
+.medicine-select-icon{
+position:absolute;
+right:16px;
+top:50%;
+transform:translateY(-50%);
+pointer-events:none;
+display:flex;
+}
+
+/* пошук */
+.medicine-products-filter input {
+width:224px;
+height:44px;
+padding-left: 48px !important;
+border-radius:60px !important;
+border:1px solid rgba(29,30,33,0.1) !important;
+background:var(--base-3) !important;
+font-size:12px;
+line-height:1.5;
+color:var(--contrast) !important;
+transition: border-color .3s ease, outline .3s ease;
+}
+
+.medicine-products-filter input::placeholder {
+color:var(--text-green) !important;
+}
+
+.medicine-products-filter input:hover,
+.medicine-products-filter input:focus {
+border-color:var(--base-4) !important;
+outline:none;
+}
+
+.medicine-search-icon{
+position:absolute;
+left: 16px;
+top:50%;
+transform:translateY(-50%);
+pointer-events:none;
+display:flex;
+}
+
+/* кнопка Filter */
+.medicine-products-filter button {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+min-width:116px;
+height:44px;
+border:none ;
+border-radius:60px;
+background:var(--base-4);
+color:var(--base-3);
+font-size:14px;
+transition: background .3s ease;
+}
+
+.medicine-products-filter button:hover,
+.medicine-products-filter button:focus {
+background:var(--accent);
+}
+
+/* прибираємо стандарних хрестик */
+input[type="search"]::-webkit-search-cancel-button{
+-webkit-appearance:none;
+appearance:none;
+}
+
+input[type="search"]::-ms-clear{
+    display:none;
+}
+
+/* кнопкаа Reset */
+.medicine-products-filter a {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-width:116px;
+height:44px;
+border-radius:60px;
+border:1px solid var(--base-4);
+color:var(--base-4);
+text-decoration: none !important;
+font-size:14px;
+transition: background .3s ease, color .3s ease;
+}
+
+.medicine-products-filter a:hover,
+.medicine-products-filter a:focus {
+background: var(--base-4);
+color: var(--base-3);
+}
+
+/* список товарів */
+.container-product {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 40px 20px;
+padding: 0;
+align-items:stretch;
+margin: 40px 0 0;
+}
+
+/* картка товара */
+.product-cart {
+display: flex;
+flex-direction: column;
+height: 100%;
+background: var(--base);
+border-radius: 26px;
+overflow: visible;
+transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.product-cart:hover,
+.product-cart:focus {
+transform: translateY(-4px);
+box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.product-card-image {
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid var(--base-4);
+border-radius:20px;
+margin-bottom: 8px;
+overflow:hidden;
+}
+
+.product-card-image img {
+width:100%;
+height:100%;
+object-fit: contain;
+}
+
+.product-card-content {
+min-width:0;
+height:100%;
+flex:1;
+display:grid;
+grid-template-columns:1fr auto;
+grid-template-rows:auto auto 1fr auto;
+padding:20px;
+gap:6px;
+border-radius: 20px;
+background: var(--base-3);
+}
+
+.product-title {
+grid-column:1;
+grid-row:1;
+margin:0;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+overflow:hidden;
+}
+
+.product-price {
+grid-column:2;
+grid-row:1 / 3;
+align-self:start;
+margin-left:20px;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.4;
+color: var(--contrast);
+}
+
+.product-brand{
+grid-column:1;
+grid-row:3;
+margin-top:6px;
+font-size:14px;
+line-height:1.5;
+color:var(--text-green);
+}
+
+.product-buttons {
+grid-column:1 / 3;
+grid-row:4;
+margin-top:auto !important;
+display:flex;
+flex-direction:row;
+align-items:center;
+gap:12px;
+}
+
+.product-buttons .add_to_cart_button {
+border-radius: 24px !important;
+}
+
+.product-buttons .added_to_cart {
+display: none !important;
+}
+
+.product-details-btn {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+white-space:nowrap;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.5;
+color: var(--contrast);
+transition: text-decoration .3s ease, text-decoration-skip-ink .3s ease, color .3s ease;
+}
+
+.product-details-btn:hover,
+.product-details-btn:focus {
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: var(--contrast-2);
+}
+
+/* пагінація */
+.medicine-pagination {
+margin-top:50px;
+display:flex;
+justify-content:center;
+}
+
+.medicine-pagination ul {
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.medicine-pagination li {
+margin:0;
+}
+
+.medicine-pagination a,
+.medicine-pagination span {
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background: var(--base-3);
+border:1px solid #E5E7EB;
+color:var(--contrast);
+font-size:14px;
+font-weight:500;
+text-decoration: none !important;
+transition: background .3s ease, border-color .3s ease, color .3s ease;
+}
+
+.medicine-pagination .current {
+background: var(--base-4);
+border-color: var(--base-4);
+color: var(--base-3);
+}
+
+.medicine-pagination a:hover {
+background: var(--base-4);
+border-color: var(--base-4);
+color: var(--base-3);
+}
+
+.medicine-pagination .pagination-arrow {
+font-size:20px;
+line-height:1;
+}
+
+.medicine-pagination .dots {
+background:transparent;
+border:none;
+}
+
+.woocommerce ul.products {
+display:none;
+}
+
+.woocommerce-ordering,
+.woocommerce-result-count {
+display:none;
+}
+
+
+@media(max-width:1024px){
+.container-product {
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media(max-width:800px){
+.container-product {
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:767px){
+.medicine-products-filter form {
+flex-direction:column;
+align-items:stretch;
+gap:12px;
+}
+
+.medicine-products-filter select,
+.medicine-products-filter input,
+.medicine-products-filter button,
+.medicine-products-filter a {
+width:100%;
+}
+
+.container-product {
+grid-template-columns:1fr;
+gap: 20px;
+}
+
+.product-card-content {
+padding:16px;
+}
+
+.product-buttons {
+flex-wrap:wrap;
+}
+
+.medicine-pagination ul {
+gap:8px;
+}
+
+.medicine-pagination a,
+.medicine-pagination span {
+width:36px;
+height:36px;
+}
+}

@@ -1,0 +1,72 @@
+.medicine-pagination {
+margin-top: 50px;
+display: flex;
+justify-content: center;
+}
+
+.medicine-pagination ul {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.medicine-pagination li {
+margin: 0;
+}
+
+
+.medicine-pagination a,
+.medicine-pagination span {
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: var(--base-3);
+border: 1px solid #E5E7EB;
+color: var(--contrast);
+font-size: 14px;
+font-weight: 500;
+text-decoration: none;
+transition: background .3s ease, border-color .3s ease, color.3s ease;
+}
+
+
+/* активна сторінка */
+.medicine-pagination .current {
+background: var(--base-4);
+border-color: var(--base-4);
+color: var(--base-3);
+}
+
+.medicine-pagination a:hover {
+background: var(--base-4);
+border-color: var(--base-4);
+color: var(--base-3);
+}
+
+
+/* стрілки */
+.medicine-pagination .pagination-arrow {
+font-size: 20px;
+line-height: 1;
+}
+
+
+/* крапки */
+.medicine-pagination .page-numbers.dots {
+border: none;
+background: transparent;
+}
+
+.medicine-pagination a,
+.medicine-pagination a:visited,
+.medicine-pagination a:hover,
+.medicine-pagination a:focus {
+text-decoration: none;
+}
