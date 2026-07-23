@@ -1,0 +1,40 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+
+# WordPress config
+/wp-config.php
+
+# Plugins
+/wp-content/plugins/
+
+# Parent theme
+/wp-content/themes/generatepress/
+
+# Default WordPress themes
+/wp-content/themes/twentytwentythree/
+/wp-content/themes/twentytwentyfour/
+/wp-content/themes/twentytwentyfive/
+
+# Uploads
+/wp-content/uploads/
+
+# Cache
+/wp-content/cache/
+/wp-content/litespeed/
+
+# Database
+*.sql
+
+# LocalWP
+/local-xdebuginfo.php
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# System
+.DS_Store
+Thumbs.db
