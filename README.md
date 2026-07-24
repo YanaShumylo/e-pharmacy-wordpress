@@ -1,15 +1,23 @@
 # E-Pharmacy WordPress
-
 Custom online pharmacy website built with WordPress.
-
 The project was developed using Gutenberg blocks, GeneratePress Child Theme, WooCommerce and custom WordPress functionality.
 
 ---
+## Screenshots
+![Home](docs/images/hero.webp)
+![Burger Menu](docs/images/burger-menu.webp)
+![Medicine Stores](docs/images/medicine-stores.webp)
+![Medicine](docs/images/medicine-tab.webp)
+![Product Mobile](docs/images/product-mob.webp)
+![Product Desktop](docs/images/product-desc.webp)
+![Product Reviews](docs/images/product-reviews.webp)
+![Registration](docs/images/register-mob.webp)
+![Cart](docs/images/cart.webp)
+![Cart Summary](docs/images/cart2.webp)
 
-## Project Overview
+---
 
 E-Pharmacy is a responsive pharmacy website that includes:
-
 - medicine catalog;
 - pharmacy store information;
 - WooCommerce integration;
@@ -23,32 +31,26 @@ E-Pharmacy is a responsive pharmacy website that includes:
 ## Technologies
 
 ### CMS
-
 - WordPress
 
 ### Theme
-
 - GeneratePress
 - GeneratePress Child Theme
 
 ### Editor & Blocks
-
 - Gutenberg
 - GenerateBlocks
 
 ### E-commerce
-
 - WooCommerce
 
 ### Custom Development
-
 - PHP
 - WordPress Hooks
 - Custom Post Types
 - Advanced Custom Fields PRO
 
 ### Plugins
-
 - Custom Post Type UI
 - Filter Everything — WordPress & WooCommerce Filters
 - Rank Math SEO
@@ -59,43 +61,13 @@ E-Pharmacy is a responsive pharmacy website that includes:
 ---
 
 ## Theme
-
 Custom child theme:
-
-
 wp-content/themes/generatepress-child
-
-
-Theme structure:
-
-
-generatepress-child
-│
-├── assets
-│ ├── css
-│ ├── js
-│ └── images
-│
-├── inc
-│ ├── header.php
-│ ├── medicine.php
-│ ├── medicine-stores.php
-│ ├── register-form.php
-│ ├── login-form.php
-│ └── reviews-slider.php
-│
-├── template-parts
-│
-├── functions.php
-└── style.css
-
 
 ---
 
 ## Features
-
 Implemented:
-
 - custom header;
 - responsive navigation;
 - medicine catalog;
@@ -110,9 +82,7 @@ Implemented:
 ---
 
 ## Performance Optimization
-
 Implemented:
-
 - LiteSpeed Cache configuration;
 - image optimization;
 - WebP images;
@@ -123,9 +93,7 @@ Implemented:
 ---
 
 ## SEO
-
 Implemented:
-
 - Rank Math SEO configuration;
 - meta titles and descriptions;
 - XML sitemap;
@@ -136,65 +104,34 @@ Implemented:
 ---
 
 ## Installation
-
 ### Local setup
-
 1. Install WordPress locally using LocalWP.
-
 2. Install required plugins:
 
-
 docs/plugins.md
-
-
 3. Import database:
-
-
 database/README.md
-
-
 4. Copy theme:
-
-
 wp-content/themes/generatepress-child
-
-
 5. Activate GeneratePress Child Theme.
-
 6. Configure WooCommerce settings.
-
 7. Update site URL after database import.
 
 ---
 
 ## Database
-
 Database backup is stored separately because it contains private WordPress data.
-
 Restore instructions:
 
-
 database/README.md
-
-
 ---
 
 ## Development Environment
-
 Local environment:
-
-
 LocalWP
-
-
 Version control:
-
-
 Git + GitHub
-
-
 ---
 
 ## License
-
 This project is created for portfolio purposes.
