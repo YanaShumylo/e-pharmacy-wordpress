@@ -3,6 +3,13 @@ Custom online pharmacy website built with WordPress.
 The project was developed using Gutenberg blocks, GeneratePress Child Theme, WooCommerce and custom WordPress functionality.
 
 ---
+
+## Project Links
+
+- **Frontend GitHub:** https://github.com/YanaShumylo/e-pharmacy-wordpress
+- **Video Demo:** https://www.loom.com/share/77992063bcca47c4ac278e74b4d996f7
+
+---
 ## Screenshots
 ![Home](docs/images/hero.webp)
 ![Burger Menu](docs/images/burger-menu.webp)
@@ -16,7 +23,7 @@ The project was developed using Gutenberg blocks, GeneratePress Child Theme, Woo
 ![Cart Summary](docs/images/cart2.webp)
 
 ---
-
+##  Project Overview
 E-Pharmacy is a responsive pharmacy website that includes:
 - medicine catalog;
 - pharmacy store information;
